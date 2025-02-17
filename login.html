@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(to right, #141E30, #243B55);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 350px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            background: #00aaff;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background: #007acc;
+        }
+
+        .register-link {
+            margin-top: 15px;
+            color: white;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="dashboard.html" method="POST">
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="#" class="register-link">Don't have an account? Register</a>
+    </div>
+</body>
+</html>
